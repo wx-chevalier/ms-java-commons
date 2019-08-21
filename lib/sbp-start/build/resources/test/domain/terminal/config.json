@@ -1,0 +1,58 @@
+{
+  "admin": {
+    "user": {
+      "username": "test",
+      "password": "Test123"
+    },
+    "network": {
+      "interface": "eth0",
+      "subnet": "192.168.68.0",
+      "mask": "255.255.255.0",
+      "ip": "192.168.68.2"
+    }
+  },
+  "agent": {
+    "host": "58.213.153.14",
+    "port": "8001"
+  },
+  "cloud": {
+    "registration": {},
+    "oss": {
+      "configUrl": ""
+    }
+  },
+  "db": {
+    "mysql": {
+      "host": "mysql.wsat",
+      "port": 3306,
+      "user": "root",
+      "password": "wsat.mysql.pass",
+      "database": "wsat"
+    },
+    "redis": {
+      "host": "redis.wsat",
+      "port": 6387,
+      "password": "wsat.redis.pass"
+    }
+  },
+  "service": {
+    "product": {
+      "host": "0.0.0.0",
+      "port": 8080
+    },
+    "cendertron": {
+      "host": "cendertron.wsat",
+      "port": 5000
+    }
+  },
+  "task": {
+    "imageName": "cscan-all:0.1",
+    "rabbitmqHost": "rabbitmq"
+  },
+  "terminal": {
+    "info": {
+      "releaseDate": "2018-09-10"
+    },
+    "license": {}
+  }
+}

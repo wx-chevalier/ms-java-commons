@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1/wsat_unit_test_db?useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: root
+    password:
+
+application:
+  aliyun:
+    endpoint: "https://oss-cn-beijing.aliyuncs.com"
+    access-key-id: LTAIcf3JwV5j5Kd5
+    access-key-secret: i0X3WjWeyBFMo58HkYoIcvevsGWy6Z
+  security:
+    jwt:
+      authority-claim: authorities
+      token-header: Authorization
+      token-prefix: Bearer
+      expiration-ms: 86400000
+      secret: unit-test-secret
