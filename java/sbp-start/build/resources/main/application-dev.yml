@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1/dev_db?useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: root
+    password:
+logging:
+  level:
+    com.cy.wsat.daemon: debug
+application:
+  terminalConfig: /etc/wsat/config.json
