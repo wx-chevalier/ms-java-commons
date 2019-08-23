@@ -14,6 +14,8 @@ Union-fab Domain-driven Layered Architecture for MicroService Apps
 
 ![](https://i.postimg.cc/nLfGKdng/image.png)
 
+对于详细的设计原则与思路参考[软件架构模式/UDLA](https://ngte-se.gitbook.io/i/?q=UDLA) 系列文章。
+
 # Home & More | 延伸阅读
 
 ![](https://i.postimg.cc/59QVkFPq/image.png)
