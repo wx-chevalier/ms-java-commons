@@ -1,8 +1,20 @@
 # UDLA
 
-Union-fab Domain-driven Layered Architecture for Spring MicroService Apps
+Union-fab Domain-driven Layered Architecture for MicroService Apps
 
 *WIP*，项目正在逐步开放中，对于软件架构与领域驱动设计请参考[软件架构设计](https://ngte-se.gitbook.io/i/)系列文章，或可前往 [spring-snippets](https://github.com/wx-chevalier/spring-snippets) 查看代码示例。
+
+- COLA
+
+![](https://i.postimg.cc/9QPNbzm9/image.png)
+
+![](https://i.postimg.cc/V6RgkjQT/image.png)
+
+- UDLA
+
+![](https://i.postimg.cc/nLfGKdng/image.png)
+
+对于详细的设计原则与思路参考[软件架构模式/UDLA](https://ngte-se.gitbook.io/i/?q=UDLA) 系列文章。
 
 # Home & More | 延伸阅读
 
