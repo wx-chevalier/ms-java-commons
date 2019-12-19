@@ -4,7 +4,7 @@ Union-fab Domain-driven Layered Architecture for MicroService Apps，试图探�
 
 _WIP_，项目正在逐步开放中，对于软件架构与领域驱动设计请参考[软件架构设计](https://ngte-se.gitbook.io/i/)系列文章，或可前往 [spring-exapmles](https://github.com/BE-Kits/spring-examples) 查看代码示例。
 
-![UDLA](https://s2.ax1x.com/2019/12/19/QbNlin.png)
+![UDLA](https://s2.ax1x.com/2019/12/19/QbTcdg.png)
 
 - COLA
 
