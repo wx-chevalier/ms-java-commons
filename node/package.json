@@ -45,10 +45,10 @@
     "inversify": "4.5.1",
     "inversify-express-utils": "4.1.0",
     "reflect-metadata": "0.1.10",
-    "morgan": "1.9.0",
+    "morgan": "1.9.1",
     "mongodb": "2.2.33",
     "mysql": "2.15.0",
-    "typeorm": "0.1.2",
+    "typeorm": "0.2.20",
     "class-validator": "0.7.3",
     "winston": "2.4.0"
   },
