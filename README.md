@@ -6,15 +6,7 @@ _WIP_，项目正在逐步开放中，对于软件架构与领域驱动设计请
 
 ![UDLA](https://s2.ax1x.com/2019/12/19/QbTcdg.png)
 
-- COLA
-
-![](https://i.postimg.cc/9QPNbzm9/image.png)
-
-![](https://i.postimg.cc/V6RgkjQT/image.png)
-
-- UDLA
-
-![](https://i.postimg.cc/nLfGKdng/image.png)
+![洋葱圈图](https://i.postimg.cc/nLfGKdng/image.png)
 
 对于详细的设计原则与思路参考[软件架构模式/UDLA](https://ngte-se.gitbook.io/i/?q=UDLA) 系列文章。
 
@@ -22,7 +14,14 @@ _WIP_，项目正在逐步开放中，对于软件架构与领域驱动设计请
 
 ## Motivation & Credits
 
+### COLA
+
 - [应用架构 COLA 2.0](https://blog.csdn.net/significantfrank/article/details/100074716)
+
+![](https://i.postimg.cc/9QPNbzm9/image.png)
+
+![](https://i.postimg.cc/V6RgkjQT/image.png)
+
 
 ## Copyright
 
