@@ -1,0 +1,6 @@
+FROM openjdk:8-jre-slim
+ENV TZ Asia/Shanghai
+EXPOSE 8080
+COPY udla-api/build/libs/udla-api-*.jar /app/udla-api.jar
+WORKDIR /app
+CMD java -jar udla-api.jar

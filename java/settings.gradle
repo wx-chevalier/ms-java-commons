@@ -1,4 +1,15 @@
-include ':sbp-start'
-include ':sbp-mbg'
+rootProject.name = 'udla'
 
-rootProject.name = 'spring-boot-production'
+// WX Modules
+include ':udla-infras'
+include ':udla-application'
+include ':udla-api'
+include ':udla-domain'
+include ':udla-common'
+
+project(':udla-common').projectDir = "$rootDir/udla-common" as File
+project(':udla-infras').projectDir = "$rootDir/udla-infras" as File
+project(':udla-application').projectDir = "$rootDir/udla-application" as File
+project(':udla-api').projectDir = "$rootDir/udla-api" as File
+project(':udla-domain').projectDir = "$rootDir/udla-domain" as File
+
