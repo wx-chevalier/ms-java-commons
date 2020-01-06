@@ -1,8 +1,14 @@
-# UDLA
+# UDLA, adheres to the [RealWorld](https://github.com/gothinkster/realworld-example-apps) spec and API.
 
 Union-fab Domain-driven Layered Architecture for MicroService Apps，试图探索一套切实可行的应用架构规范，可以复制、可以理解、可以落地、可以控制复杂性的指导和约束。
 
+![RealWorld Example App using Kotlin and Spring](https://s2.ax1x.com/2020/01/06/lr6Uit.md.png)
+
+For more information on how to this works with other frontends/backends, head over to the [RealWorld](https://github.com/gothinkster/realworld) repo.
+
 _WIP_，项目正在逐步开放中，对于软件架构与领域驱动设计请参考[软件架构设计](https://ngte-se.gitbook.io/i/)系列文章，或可前往 [spring-exapmles](https://github.com/BE-Kits/spring-examples) 查看代码示例。
+
+# 架构图解
 
 ![UDLA](https://s2.ax1x.com/2019/12/19/QbTcdg.png)
 
