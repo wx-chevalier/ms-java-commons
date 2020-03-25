@@ -1,8 +1,28 @@
-# UDLA, adheres to the [RealWorld](https://github.com/gothinkster/realworld-example-apps) spec and API.
-
-Union-fab Domain-driven Layered Architecture for MicroService Apps，试图探索一套切实可行的应用架构规范，可以复制、可以理解、可以落地、可以控制复杂性的指导和约束。
-
 ![RealWorld Example App using Kotlin and Spring](https://s2.ax1x.com/2020/01/06/lr6Uit.md.png)
+
+<br />
+<p align="center">
+  <a href="https://github.com/github_username/repo">
+    <img src="https://s2.ax1x.com/2020/01/06/lr21MT.png" alt="Logo">
+  </a>
+
+  <h3 align="center">UDLA</h3>
+
+  <p align="center">
+    adheres to the <a href="https://github.com/gothinkster/realworld-example-apps"><strong>RealWorld</strong></a> spec and API.
+    <br />
+    <a href="https://github.com/github_username/repo"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/github_username/repo">View Demo</a>
+    ·
+    <a href="https://github.com/github_username/repo/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/github_username/repo/issues">Request Feature</a>
+  </p>
+</p>
+
+Union Domain-driven Layered Architecture for MicroService Apps，试图探索一套切实可行的应用架构规范，可以复制、可以理解、可以落地、可以控制复杂性的指导和约束。
 
 For more information on how to this works with other frontends/backends, head over to the [RealWorld](https://github.com/gothinkster/realworld) repo.
 
