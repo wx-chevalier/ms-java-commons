@@ -1,9 +1,9 @@
-![RealWorld Example App using Kotlin and Spring](https://s2.ax1x.com/2020/01/06/lr6Uit.md.png)
+
 
 <br />
 <p align="center">
   <a href="https://github.com/github_username/repo">
-    <img src="https://s2.ax1x.com/2020/01/06/lr21MT.png" alt="Logo">
+    <img src="https://s2.ax1x.com/2020/01/06/lr6Uit.md.png" alt="Logo">
   </a>
 
   <h3 align="center">UDLA</h3>
