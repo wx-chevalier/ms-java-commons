@@ -22,7 +22,7 @@
   </p>
 </p>
 
-Union Domain-driven Layered Architecture for MicroService Apps，试图探索一套切实可行的应用架构规范，可以复制、可以理解、可以落地、可以控制复杂性的指导和约束。
+Unified Domain-driven Layered Architecture for MicroService Apps，试图探索一套切实可行的应用架构规范，可以复制、可以理解、可以落地、可以控制复杂性的指导和约束。
 
 For more information on how to this works with other frontends/backends, head over to the [RealWorld](https://github.com/gothinkster/realworld) repo.
 
