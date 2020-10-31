@@ -1,5 +1,3 @@
-
-
 <br />
 <p align="center">
   <a href="https://github.com/github_username/repo">
@@ -26,7 +24,7 @@ Union Domain-driven Layered Architecture for MicroService Apps，试图探索一
 
 For more information on how to this works with other frontends/backends, head over to the [RealWorld](https://github.com/gothinkster/realworld) repo.
 
-_WIP_，项目正在逐步开放中，对于软件架构与领域驱动设计请参考[软件架构设计](https://ngte-se.gitbook.io/i/)系列文章，或可前往 [spring-exapmles](https://github.com/BE-Kits/spring-examples) 查看代码示例。
+_WIP_，项目正在逐步开放中，对于软件架构与领域驱动设计请参考[软件架构设计](https://ngte-se.gitbook.io/i/)系列文章，或可前往 [spring-exapmles](https://github.com/wx-chevalier/spring-examples) 查看代码示例。
 
 # 架构图解
 
