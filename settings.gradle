@@ -1,0 +1,5 @@
+rootProject.name = 'ms-java-commons'
+
+// 公共 Tools
+include ':tools:msjc-utils'
+project(':tools:msjc-utils').projectDir = new File("$rootDir/tools/msjc-utils")

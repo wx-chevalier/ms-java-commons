@@ -1,0 +1,22 @@
+dependencies {
+    api project(':common:domain')
+    implementation project(':common:tools')
+    implementation project(':common:infrastructure')
+
+    api project(':analytics:analytics-common')
+
+    implementation "org.springframework.boot:spring-boot-starter:${springBootVersion}"
+    implementation "org.springframework.boot:spring-boot-starter-web:${springBootVersion}"
+    implementation "org.springframework.boot:spring-boot-starter-security:${springBootVersion}"
+    implementation "com.github.xiaoymin:knife4j-spring-boot-starter:${knifeDocVersion}"
+    implementation "javax.validation:validation-api:${validationApiVersion}"
+
+    testImplementation "org.mockito:mockito-core:${mockitoVersion}"
+}
+
+test {
+    useJUnitPlatform()
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
+}

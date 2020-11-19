@@ -1,0 +1,16 @@
+dependencies {
+    api project(':common:domain')
+    api project(':common:tools')
+    api project(':common:infrastructure')
+
+    implementation "org.springframework.boot:spring-boot-starter-security:${springBootVersion}"
+
+    testImplementation "org.mockito:mockito-core:${mockitoVersion}"
+}
+
+test {
+    useJUnitPlatform()
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
+}

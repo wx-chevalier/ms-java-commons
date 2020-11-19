@@ -1,0 +1,5 @@
+dependencies {
+    implementation project(':common:tools')
+    api "com.fasterxml.jackson.core:jackson-databind:${jacksonVersion}"
+    api "io.vavr:vavr:${vavrVersion}"
+}
