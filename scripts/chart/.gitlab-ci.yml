@@ -9,6 +9,6 @@ publish chart:
   before_script:
     - apk add git
     - helm plugin install https://github.com/chartmuseum/helm-push
-    - helm repo add ufc https://${CHARTMUSEUM_USER}:${CHARTMUSEUM_PASSWORD}@charts.unionfab.com
+    - helm repo add msjc https://${CHARTMUSEUM_USER}:${CHARTMUSEUM_PASSWORD}@charts.biz.com
   script:
-    - helm push . ufc --force
+    - helm push . msjc --force

@@ -2,9 +2,9 @@
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
-  name: {{ include "ufc-be.fullname" . }}
+  name: {{ include "msjc-be.fullname" . }}
   labels:
-    {{- include "ufc-be.labels" . | nindent 4 }}
+    {{- include "msjc-be.labels" . | nindent 4 }}
   {{- with .Values.persistence.annotations  }}
   annotations:
     {{ toYaml . | nindent 4 }}

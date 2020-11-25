@@ -1,4 +1,4 @@
-package com.unionfab.analytics.common.data;
+package com.msjc.analytics.common.data;
 
 public interface EntityTypes {
 

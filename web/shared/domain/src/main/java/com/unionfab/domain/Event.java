@@ -1,4 +1,4 @@
-package com.unionfab.domain;
+package com.msjc.domain;
 
 import java.io.Serializable;
 import java.time.Instant;

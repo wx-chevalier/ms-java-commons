@@ -1,10 +1,10 @@
-package com.unionfab.infrastructure.mybatis;
+package com.msjc.infrastructure.mybatis;
 
-import static com.unionfab.infrastructure.mybatis.$MyBatis.bytesToUUID;
-import static com.unionfab.infrastructure.mybatis.$MyBatis.getUUIDIdConstructor;
-import static com.unionfab.infrastructure.mybatis.$MyBatis.uuidToBytes;
+import static com.msjc.infrastructure.mybatis.$MyBatis.bytesToUUID;
+import static com.msjc.infrastructure.mybatis.$MyBatis.getUUIDIdConstructor;
+import static com.msjc.infrastructure.mybatis.$MyBatis.uuidToBytes;
 
-import com.unionfab.domain.EntityId;
+import com.msjc.domain.EntityId;
 import io.vavr.API;
 import java.sql.CallableStatement;
 import java.sql.PreparedStatement;

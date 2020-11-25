@@ -1,25 +1,25 @@
-{{- $fullName := include "ufc-be.fullname" . -}}
+{{- $fullName := include "msjc-be.fullname" . -}}
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: {{ $fullName }}
   labels:
-    {{- include "ufc-be.labels" . | nindent 4 }}
+    {{- include "msjc-be.labels" . | nindent 4 }}
 spec:
   replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
-      {{- include "ufc-be.selectorLabels" . | nindent 6 }}
+      {{- include "msjc-be.selectorLabels" . | nindent 6 }}
   template:
     metadata:
       labels:
-        {{- include "ufc-be.selectorLabels" . | nindent 8 }}
+        {{- include "msjc-be.selectorLabels" . | nindent 8 }}
     spec:
       {{- with .Values.imagePullSecrets }}
       imagePullSecrets:
         {{- toYaml . | nindent 8 }}
       {{- end }}
-      serviceAccountName: {{ include "ufc-be.serviceAccountName" . }}
+      serviceAccountName: {{ include "msjc-be.serviceAccountName" . }}
       securityContext:
         {{- toYaml .Values.podSecurityContext | nindent 8 }}
       initContainers:
@@ -70,8 +70,8 @@ spec:
             - -Darms.licenseKey={{ .Values.arms.licenseKey }}
             - -Darms.appName={{ .Values.arms.appName }}
             - -jar
-            - ufc-api.jar
-            - --spring.config.location=/etc/ufc/config.yaml
+            - msjc-api.jar
+            - --spring.config.location=/etc/msjc/config.yaml
           ports:
             - name: http
               # see secret.yaml server.port
@@ -81,9 +81,9 @@ spec:
             {{- toYaml .Values.resources | nindent 12 }}
           volumeMounts:
             - name: app-conf
-              mountPath: "/etc/ufc"
+              mountPath: "/etc/msjc"
               readOnly: true
-            - name: ufc-local-file-storage
+            - name: msjc-local-file-storage
               mountPath: {{ .Values.localFileStore.savePath }}
           env:
             {{- if .Values.deployAt }}
@@ -207,7 +207,7 @@ spec:
         - name: app-conf
           configMap:
             name: {{ $fullName }}
-        - name: ufc-local-file-storage
+        - name: msjc-local-file-storage
           {{- if .Values.persistence.enabled }}
           persistentVolumeClaim:
             claimName: {{ .Values.persistence.existingClaim | default $fullName }}

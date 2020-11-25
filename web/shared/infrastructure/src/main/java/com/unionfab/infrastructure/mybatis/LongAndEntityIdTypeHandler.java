@@ -1,6 +1,6 @@
-package com.unionfab.infrastructure.mybatis;
+package com.msjc.infrastructure.mybatis;
 
-import com.unionfab.domain.EntityId;
+import com.msjc.domain.EntityId;
 import java.sql.CallableStatement;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -10,7 +10,7 @@ import org.apache.ibatis.type.BaseTypeHandler;
 import org.apache.ibatis.type.JdbcType;
 
 /**
- * {@link com.unionfab.domain.EntityId} 和表 bigint/int 类型主键的映射
+ * {@link com.msjc.domain.EntityId} 和表 bigint/int 类型主键的映射
  *
  * @param <T> 实体 ID 类型
  */

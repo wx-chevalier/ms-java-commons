@@ -1,4 +1,4 @@
-package com.unionfab.domain;
+package com.msjc.domain;
 
 import io.vavr.collection.List;
 

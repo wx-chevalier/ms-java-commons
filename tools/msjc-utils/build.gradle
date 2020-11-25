@@ -5,9 +5,6 @@ plugins {
 }
 
 dependencies {
-    api "io.vavr:vavr:${vavrVersion}"
-    api "io.vavr:vavr-jackson:${vavrVersion}"
-
     api "com.fasterxml.jackson.core:jackson-core:${jacksonVersion}"
     api "com.fasterxml.jackson.core:jackson-databind:${jacksonVersion}"
     api "com.fasterxml.jackson.core:jackson-annotations:${jacksonVersion}"

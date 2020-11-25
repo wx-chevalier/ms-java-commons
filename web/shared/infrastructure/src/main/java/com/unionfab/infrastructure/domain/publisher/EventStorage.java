@@ -1,6 +1,6 @@
-package com.unionfab.infrastructure.domain.publisher;
+package com.msjc.infrastructure.domain.publisher;
 
-import com.unionfab.domain.DomainEvent;
+import com.msjc.domain.DomainEvent;
 import io.vavr.collection.List;
 
 public interface EventStorage {

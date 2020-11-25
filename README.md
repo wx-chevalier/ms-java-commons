@@ -24,34 +24,28 @@
 
 # ms-java-commons
 
-## Nav | 导航
-
-### 通用工具类模块
-
-### UDMA
-
-Unified Domain-driven Layered Architecture for MicroService Apps，试图探索一套切实可行的应用架构规范，可以复制、可以理解、可以落地、可以控制复杂性的指导和约束。
-
-For more information on how to this works with other frontends/backends, head over to the [RealWorld](https://github.com/gothinkster/realworld) repo.
-
-_WIP_，项目正在逐步开放中，对于软件架构与领域驱动设计请参考[软件架构设计](https://ngte-se.gitbook.io/i/)系列文章，或可前往 [spring-exapmles](https://github.com/wx-chevalier/spring-examples) 查看代码示例。
-
-![UDLA](https://s2.ax1x.com/2019/12/19/QbTcdg.png)
-
-![洋葱圈图](https://i.postimg.cc/nLfGKdng/image.png)
-
-> 对于详细的设计原则与思路参考[软件架构模式/UDLA](https://ngte-se.gitbook.io/i/?q=UDLA) 系列文章。
-
-# Usage
+# Nav | 导航
 
 ## IDE
 
 安装 google-java-format 和 lombok 插件；在配置中 Editor | Code Style | scheme 中导入 `conf/intellij-java-google-style.xml` 风格配置。
 
+## 通用工具类模块
+
+### Publish
+
+此发布指将 tools/ 下公共库发布到 Maven Central 等仓库，参考 [Bintray](https://reflectoring.io/guide-publishing-to-bintray-with-gradle/) 。
+
+```sh
+$ ./gradlew bintrayUpload -Dbintray.user=<YOUR_USER_NAME> -Dbintray.key=<YOUR_API_KEY>
+```
+
+## Web App
+
 ## Database Migration
 
-使用 flyway 进行数据库迁移，迁移脚本默认放在 `ufc-infrastructure/src/main/resources/db/migration` 下，在
-`ufc-infrastructure/build.gradle` 已经默认配置了测试数据库。
+使用 flyway 进行数据库迁移，迁移脚本默认放在 `msjc-infrastructure/src/main/resources/db/migration` 下，在
+`msjc-infrastructure/build.gradle` 已经默认配置了测试数据库。
 
 ```sh
 ./gradlew flywayInfo
@@ -63,7 +57,7 @@ _WIP_，项目正在逐步开放中，对于软件架构与领域驱动设计请
 ./gradlew -Pflyway.configFiles=/path/to/flyway.conf flywayInfo
 ```
 
-flyway 依赖在 ufc-infrastructure 子项目中添加，如果配置文件使用相对路径，它相对的将是该子项目根目录。
+flyway 依赖在 msjc-infrastructure 子项目中添加，如果配置文件使用相对路径，它相对的将是该子项目根目录。
 
 如在根目录中执行命令，要使用 `conf/flyway-local.conf` 配置：
 
@@ -71,18 +65,10 @@ flyway 依赖在 ufc-infrastructure 子项目中添加，如果配置文件使�
 ./gradlew -Pflyway.configFiles=../conf/flyway-local.conf flywayInfo
 ```
 
-数据库迁移脚本的命名见 [https://flywaydb.org/documentation/migrations#naming](https://flywaydb.org/documentation/migrations#naming)。我们正常使用的就是 Versioned
+数据库迁移脚本的命名见 [flyway docs](https://flywaydb.org/documentation/migrations#naming) 。我们正常使用的就是 Versioned
 Migrations。
 
-## Publish
-
-此发布指将 tools/ 下公共库发布到 Maven Central 等仓库，参考 [Bintray](https://reflectoring.io/guide-publishing-to-bintray-with-gradle/)。
-
-```sh
-$ ./gradlew bintrayUpload -Dbintray.user=<YOUR_USER_NAME> -Dbintray.key=<YOUR_API_KEY>
-```
-
-## Deployment
+### Deployment
 
 此部署指部署 Web 应用。
 
@@ -111,6 +97,21 @@ git merge dev
 git tag 1.0 -m
 git push --tags
 ```
+
+## UDMA
+
+Unified Domain-driven Layered Architecture for MicroService Apps，试图探索一套切实可行的应用架构规范，可以复制、可以理解、可以落地、可以控制复杂性的指导和约束。
+
+For more information on how to this works with other frontends/backends, head over to the [RealWorld](https://github.com/gothinkster/realworld) repo.
+
+_WIP_，项目正在逐步开放中，对于软件架构与领域驱动设计请参考[软件架构设计](https://ngte-se.gitbook.io/i/)系列文章，或可前往 [spring-exapmles](https://github.com/wx-chevalier/spring-examples) 查看代码示例。
+
+![UDLA](https://s2.ax1x.com/2019/12/19/QbTcdg.png)
+
+![洋葱圈图](https://i.postimg.cc/nLfGKdng/image.png)
+
+> 对于详细的设计原则与思路参考[软件架构模式/UDLA](https://ngte-se.gitbook.io/i/?q=UDLA) 系列文章。
+
 
 # About
 

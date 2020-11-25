@@ -1,10 +1,10 @@
-package com.unionfab.infrastructure.mybatis;
+package com.msjc.infrastructure.mybatis;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 import static com.google.common.base.Preconditions.checkState;
-import static com.unionfab.domain.EntityId.DEFAULT_MOST_SIGNIFICANT_BYTES;
+import static com.msjc.domain.EntityId.DEFAULT_MOST_SIGNIFICANT_BYTES;
 
-import com.unionfab.domain.EntityId;
+import com.msjc.domain.EntityId;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.nio.ByteBuffer;

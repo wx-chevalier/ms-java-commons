@@ -54,8 +54,8 @@ install_curl_or_exit() {
 build_chart_and_push() {
   if helm plugin ls | grep push;
   then
-    helm repo add ufc $CHARTMUSEUM_URL
-    helm push $CHART ufc --force
+    helm repo add msjc $CHARTMUSEUM_URL
+    helm push $CHART msjc --force
     return $?
   fi
 

@@ -21,8 +21,8 @@ cd `dirname $0`/../..
 DOCKERFILE=scripts/docker/Dockerfile-gitlab
 DOCKERFILE_TEST=scripts/docker/Dockerfile-test
 
-DOCKER_REGISTRY_SERVER=${DOCKER_REGISTRY_SERVER:=registry.unionfab.com}
-IMAGE=${DOCKER_REGISTRY_SERVER}/ufc/ufc-api
+DOCKER_REGISTRY_SERVER=${DOCKER_REGISTRY_SERVER:=registry.biz.com}
+IMAGE=${DOCKER_REGISTRY_SERVER}/msjc/msjc-api
 
 CHART=`pwd`/scripts/chart
 CHART_VERSION=`cat ${CHART}/Chart.yaml | grep '^version: ' | cut -d' ' -f2`

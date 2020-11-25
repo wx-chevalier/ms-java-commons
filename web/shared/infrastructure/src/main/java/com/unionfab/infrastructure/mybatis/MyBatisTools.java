@@ -1,4 +1,4 @@
-package com.unionfab.infrastructure.mybatis;
+package com.msjc.infrastructure.mybatis;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.LambdaUpdateWrapper;
@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
-import com.unionfab.domain.EntityId;
+import com.msjc.domain.EntityId;
 import io.vavr.API;
 import io.vavr.Tuple2;
 import io.vavr.Tuple3;

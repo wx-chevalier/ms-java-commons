@@ -3,3 +3,9 @@ rootProject.name = 'ms-java-commons'
 // 公共 Tools
 include ':tools:msjc-utils'
 project(':tools:msjc-utils').projectDir = new File("$rootDir/tools/msjc-utils")
+
+// Web App
+include ':web:biz:biz-bootstrap'
+project(':web:biz:biz-bootstrap').projectDir = new File("$rootDir/web/biz/biz-bootstrap")
+
+// UDMA

@@ -1,22 +1,22 @@
-# UFC 后端配置
+# msjc 后端配置
 
 | 参数                               | 描述                  | 默认                                    | 必须 | 作用域                 |
 |------------------------------------|-----------------------|-----------------------------------------|------|------------------------|
 | `serverPort`                       | Spring 应用端口       | `80`                                    |      | `configmap/deployment` |
 | `serverTimezone`                   | JVM 启动时区          | `Asia/Shanghai`                         |      | `deployment`           |
-| `localFileStore.savePath`          | 本地存储文件存储路径  | `/ufc/files`                            |      | `deployment/configmap` |
+| `localFileStore.savePath`          | 本地存储文件存储路径  | `/msjc/files`                            |      | `deployment/configmap` |
 | `localFileStore.maxFileSize`       | 本地存储文件最大大小  | `1024MB`                                |      | `deployment/configmap` |
-| `localFileStore.endpoint`          | 本地存储文件 endpoint | `https://api.unionfab.com/file`         |      | `deployment/configmap` |
+| `localFileStore.endpoint`          | 本地存储文件 endpoint | `https://api.biz.com/file`         |      | `deployment/configmap` |
 | `oss.accessKeyId`                  |                       |                                         | true | `secret`               |
 | `oss.accessKeySecret`              |                       |                                         | true | `secret`               |
 | `oss.endpoint`                     |                       |                                         | true | `configmap`            |
 | `oss.bucketName`                   |                       |                                         | true | `configmap`            |
 | `oss.expiration`                   |                       | `900`                                   |      | `configmap`            |
 | `oss.maxSize`                      |                       | `17179869184`                           |      | `configmap`            |
-| `oss.callbackUrl`                  |                       | `https://api.unionfab.com/callback/oss` |      | `configmap`            |
+| `oss.callbackUrl`                  |                       | `https://api.biz.com/callback/oss` |      | `configmap`            |
 | `mail.port`                        |                       | `465`                                   |      | `configmap`            |
 | `mail.host`                        |                       | `smtp.exmail.qq.com`                    |      | `configmap`            |
-| `mail.username`                    |                       | `notice@unionfab.com`                   |      | `configmap`            |
+| `mail.username`                    |                       | `notice@biz.com`                   |      | `configmap`            |
 | `mail.password`                    |                       |                                         | true | `secret`               |
 | `sms.regionId`                     |                       | `cn-hangzhou`                           |      | `configmap`            |
 | `sms.signName`                     |                       | `优联智造`                              |      | `configmap`            |
@@ -169,7 +169,7 @@ rabbitmq:
 
   persistence:
     enabled: true
-    existingClaim: ufc-test-rabbitmq
+    existingClaim: msjc-test-rabbitmq
 
   extraSecrets:
     load-definition:
@@ -218,9 +218,9 @@ rabbitmq:
 
   ingress:
     enabled: true
-    hostName: rabbitmq.test.unionfab.com
+    hostName: rabbitmq.test.biz.com
     tls: true
-    tlsSecret: rabbitmq-test-unionfab-com
+    tlsSecret: rabbitmq-test-msjc-com
     annotations:
       nginx.ingress.kubernetes.io/proxy-body-size: "0"
       kubernetes.io/ingress.class: "nginx"

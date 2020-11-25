@@ -12,8 +12,9 @@ class MustacheToolsTest {
     String res =
         MustacheTools.mustacheTemplateFile(
             "mustache/t1.mustache",
-            API.Map("name", "unionfab", "description", "Industrial Internet of things platform"));
-    assertEquals("unionfab, Industrial Internet of things platform", res);
+            API.Map("name", "msjc", "description", "Industrial Internet of things platform"));
+
+    assertEquals("msjc, Industrial Internet of things platform", res);
   }
 
   @Test
@@ -21,13 +22,14 @@ class MustacheToolsTest {
     String res =
         MustacheTools.mustache(
             "{{name}}, {{description}}",
-            API.Map("name", "unionfab", "description", "Industrial Internet of things platform"));
-    assertEquals("unionfab, Industrial Internet of things platform", res);
+            API.Map("name", "msjc", "description", "Industrial Internet of things platform"));
+
+    assertEquals("msjc, Industrial Internet of things platform", res);
   }
 
   @Test
   void test_mustache_lack_of_value() {
-    String res = MustacheTools.mustache("{{name}}, {{description}}", API.Map("name", "unionfab"));
-    assertEquals("unionfab, ", res);
+    String res = MustacheTools.mustache("{{name}}, {{description}}", API.Map("name", "msjc"));
+    assertEquals("msjc, ", res);
   }
 }

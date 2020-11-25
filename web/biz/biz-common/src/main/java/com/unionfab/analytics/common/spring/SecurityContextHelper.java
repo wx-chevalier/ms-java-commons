@@ -1,6 +1,6 @@
-package com.unionfab.analytics.common.spring;
+package com.msjc.analytics.common.spring;
 
-import com.unionfab.analytics.common.data.SecurityUser;
+import com.msjc.analytics.common.data.SecurityUser;
 import io.vavr.API;
 import io.vavr.control.Option;
 import org.springframework.security.core.Authentication;

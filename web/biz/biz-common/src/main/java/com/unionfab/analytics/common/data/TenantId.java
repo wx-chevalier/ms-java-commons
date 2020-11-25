@@ -1,6 +1,6 @@
-package com.unionfab.analytics.common.data;
+package com.msjc.analytics.common.data;
 
-import com.unionfab.domain.EntityId;
+import com.msjc.domain.EntityId;
 import java.util.UUID;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

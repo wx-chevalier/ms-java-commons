@@ -1,4 +1,4 @@
-FROM registry.unionfab.com/openjdk:8-jdk-slim as builder
+FROM registry.biz.com/openjdk:8-jdk-slim as builder
 
 # 根据 wrapper 下载 gradle
 WORKDIR /home/gradle/src

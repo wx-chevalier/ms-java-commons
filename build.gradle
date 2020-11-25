@@ -42,7 +42,11 @@ subprojects {
     }
 
     dependencies {
+        api "io.vavr:vavr:${vavrVersion}"
+        api "io.vavr:vavr-jackson:${vavrVersion}"
+        implementation "cn.hutool:hutool-all:${hutoolVersion}"
         implementation "com.google.guava:guava:${guavaVersion}"
+
         implementation "org.slf4j:slf4j-api:${slf4jVersion}"
         // works with lombok.config: lombok.extern.findbugs.addSuppressFBWarnings
         implementation "com.google.code.findbugs:annotations:${findbugsAnnotationVersion}"
@@ -70,7 +74,7 @@ subprojects {
     }
 
     spotbugs {
-        excludeFilter = file("$rootDir/scripts/config/spotbugs-exclude-filter.xml")
+        excludeFilter = file("$rootDir/config/spotbugs-exclude-filter.xml")
     }
 
     spotbugsMain {
@@ -108,6 +112,11 @@ subprojects {
             target '**/*.md'
         }
     }
+
+    test {
+        useJUnitPlatform()
+    }
+
     tasks.withType(JavaCompile) {
         options.encoding = "UTF-8"
     }

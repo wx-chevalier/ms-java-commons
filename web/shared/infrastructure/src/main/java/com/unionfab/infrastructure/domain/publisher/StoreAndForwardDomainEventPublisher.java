@@ -1,7 +1,7 @@
-package com.unionfab.infrastructure.domain.publisher;
+package com.msjc.infrastructure.domain.publisher;
 
-import com.unionfab.domain.DomainEvent;
-import com.unionfab.domain.DomainEvents;
+import com.msjc.domain.DomainEvent;
+import com.msjc.domain.DomainEvents;
 import io.vavr.collection.List;
 import lombok.AllArgsConstructor;
 import org.springframework.scheduling.annotation.Scheduled;

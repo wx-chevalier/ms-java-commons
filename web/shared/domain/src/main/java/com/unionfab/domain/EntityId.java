@@ -1,7 +1,7 @@
-package com.unionfab.domain;
+package com.msjc.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.unionfab.tools.data.HasId;
+import com.msjc.tools.data.HasId;
 import java.io.Serializable;
 import java.util.UUID;
 

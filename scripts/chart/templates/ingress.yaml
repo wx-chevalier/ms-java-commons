@@ -1,5 +1,5 @@
 {{- if .Values.ingress.enabled -}}
-  {{- $fullName := include "ufc-be.fullname" . -}}
+  {{- $fullName := include "msjc-be.fullname" . -}}
   {{- $svcPort := .Values.service.port -}}
 
 {{- if semverCompare ">=1.14-0" .Capabilities.KubeVersion.GitVersion -}}
@@ -11,7 +11,7 @@ kind: Ingress
 metadata:
   name: {{ $fullName }}
   labels:
-    {{- include "ufc-be.labels" . | nindent 4 }}
+    {{- include "msjc-be.labels" . | nindent 4 }}
   {{- with .Values.ingress.annotations }}
   annotations:
     {{- toYaml . | nindent 4 }}

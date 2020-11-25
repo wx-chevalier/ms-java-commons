@@ -15,8 +15,8 @@ cd "$(dirname "$0")/../.."
 
 DOCKERFILE=scripts/docker/Dockerfile-local
 
-DOCKER_REGISTRY_SERVER=${DOCKER_REGISTRY_SERVER:=registry.unionfab.com}
-IMAGE=${DOCKER_REGISTRY_SERVER}/ufc/ufc-api
+DOCKER_REGISTRY_SERVER=${DOCKER_REGISTRY_SERVER:=registry.biz.com}
+IMAGE=${DOCKER_REGISTRY_SERVER}/msjc/msjc-api
 
 TAG=${TAG:=latest}
 
@@ -29,7 +29,7 @@ echo "[1/3] Build project locally ${IMAGE}:${TAG}"
   && echo "- testing" && ./gradlew test
 
 echo "- building"
-./gradlew :ufc:ufc-api:build -x test
+./gradlew :msjc:msjc-api:build -x test
 
 
 echo "[2/3] Finished building ${TAG}"

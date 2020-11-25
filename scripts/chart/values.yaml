@@ -1,7 +1,7 @@
 replicaCount: 1
 
 image:
-  repository: registry.unionfab.com/ufc/ufc-api
+  repository: registry.biz.com/msjc/msjc-api
 
 imagePullSecrets: []
 nameOverride: ""
@@ -42,19 +42,19 @@ tsdb:
 localFileStore:
   # TODO: 本地文件存储 - 待移除
   enabled: true
-  savePath: /ufc/files
+  savePath: /msjc/files
   maxFileSize: 1024MB
-  endpoint: https://api.unionfab.com/file
+  endpoint: https://api.biz.com/file
 
 oss:
   # 阿里 OSS 存储配置，将生成默认存储
   # accessKeyId:
   # accessKeySecret:
   # endpoint: oss-cn-hangzhou.aliyuncs.com
-  bucketName: unionfab-dev
+  bucketName: msjc-dev
   expiration: 900
   maxSize: 17179869184
-  callbackUrl: https://api.unionfab.com/callback/oss
+  callbackUrl: https://api.biz.com/callback/oss
 
 sms:
   regionId: cn-hangzhou
@@ -65,7 +65,7 @@ sms:
 mail:
   port: 465
   host: smtp.exmail.qq.com
-  username: notice@unionfab.com
+  username: notice@biz.com
   # password:
 
 dingTalk:

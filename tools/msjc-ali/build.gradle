@@ -1,0 +1,1 @@
+compile group: 'com.alipay.sdk', name: 'alipay-easysdk', version: '2.1.0'
