@@ -1,5 +1,0 @@
-rootProject.name = 'ms-java-commons-boilerplate'
-
-// 代码模块
-include ':module'
-project(':module').projectDir = new File("$rootDir/module")
